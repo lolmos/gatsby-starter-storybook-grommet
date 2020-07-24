@@ -4,6 +4,19 @@ import styled from 'styled-components';
 import Layout from '../global/Layout';
 import Image from '../components/Image';
 
+import { 
+  Anchor, 
+  Box,
+  Button,
+  Footer, 
+  Header,
+  Menu, 
+  Text, 
+   } from "grommet";
+
+import { Home} from 'grommet-icons'
+
+
 const Page = styled.div`
   width: 100%;
   height: 100vh;
@@ -28,13 +41,37 @@ const Label = styled.p`
   text-transform: uppercase;
 `;
 
+
 const IndexPage = () => (
   <Layout>
-    <Page>
-      <Image />
-      <Heading>GatsbyJS + Storybook</Heading>
-      <Label>Starter</Label>
-    </Page>
+
+      <Header background='brand'>
+        <Button 
+          icon={<Home /> } hoverIndicator 
+          label='Menu'
+          />
+        <Menu label="account" items={
+          [
+            { label: 'logout' }
+          
+          ]
+        } />
+      </Header>
+
+      <Box as="main" pad="medium" flex overflow="auto">
+        <Image />
+        <Heading>GatsbyJS + Storybook + Grommet </Heading>
+        <Label>Starter</Label>
+        </Box>
+        <Footer background="light-4" justify="center" pad="small">
+          <Text textAlign="center" size="small">
+            © {new Date().getFullYear()}, Built with
+            {` `}
+            <Anchor href="https://www.gatsbyjs.org">Gatsby</Anchor>
+            {` and `}
+            <Anchor href="https://v2.grommet.io">Grommet</Anchor>
+          </Text>
+        </Footer>
   </Layout>
 );
 

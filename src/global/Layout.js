@@ -5,6 +5,11 @@ import { StaticQuery, graphql } from 'gatsby';
 
 import GlobalStyle from './GlobalStyle';
 
+
+
+import { Grommet } from "grommet";
+import { grommet } from "grommet/themes";
+
 const Layout = ({ children }) => (
   <StaticQuery
     query={graphql`
@@ -26,9 +31,16 @@ const Layout = ({ children }) => (
           />
         </Helmet>
         <GlobalStyle />
-        <>
+        <Grommet
+          theme={grommet}
+          full
+          style={{
+            display: "flex",
+            flexDirection: "column",
+          }}
+         >
           {children}
-        </>
+        </Grommet>
       </>
     )}
   />
