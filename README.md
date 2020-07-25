@@ -7,13 +7,16 @@
   GatsbyJS + Storybook Starter
 </h1>
 <p align="center">
-  Gatsby starter that uses Storybook + additional set of tools listed bellow, and provides an easy to start structure to get you up and running with your Gatsby powered site.
+  Gatsby starter that uses Storybook + Grommet + additional set of tools listed bellow, and provides an easy to start structure to get you up and running with your Gatsby powered site.
 </p>
+
+Based on https://github.com/markoradak/gatsby-starter-storybook
 
 ##  What's inside?
 
 - Gatsby (v2)
 - Storybook (v5)
+- Grommet (v2)
 - Styled Components (v4)
 - Styled Reset (Advanced)
 - Netlify Conf
@@ -21,7 +24,7 @@
 
 ## Quick start
 ```bash
-$ gatsby new my-awesome-site https://github.com/markoradak/gatsby-starter-storybook
+$ gatsby new my-awesome-site https://github.com/lolmos/gatsby-starter-storybook-grommet
 
 $ cd my-awesome-site
 $ yarn start || yarn develop
