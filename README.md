@@ -32,9 +32,6 @@ $ yarn start || yarn develop
 
 ## Deploy
 
-[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/markoradak/gatsby-starter-storybook)
+[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://github.com/lolmos/gatsby-starter-storybook-grommet)
 
-## License
 
-Licensed under the MIT License, Copyright © 2018 Marko Radak.  
-See [license](LICENSE) for more information.
